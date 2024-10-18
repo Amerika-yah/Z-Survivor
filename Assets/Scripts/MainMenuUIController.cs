@@ -19,6 +19,7 @@ public class MainMenuUIController : MonoBehaviour
 
     public void PlayButtonClick()
     {
+        //There's an error here once clicked the player is not visible
         SceneManager.LoadScene("Gameplay");
     }
     public void CreditsBUttonClick()
