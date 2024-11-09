@@ -58,11 +58,11 @@ public class PlayerController : MonoBehaviour
     }
     void Movement()
     {
-        rb.velocity = moveDirection * speed;
+        rb.linearVelocity = moveDirection * speed;
 
-        if (rb.velocity != Vector2.zero)
+        if (rb.linearVelocity != Vector2.zero)
         {
-            transform.up = rb.velocity;
+            transform.up = rb.linearVelocity;
         }
     }
     void Shoot()
